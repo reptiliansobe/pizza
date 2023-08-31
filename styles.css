@@ -1,82 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+
+
 html {
   background-color: tan;
 }
 .nav-link, .links {
   text-decoration: none;
-  display: inline-block;
   color: green;
+}
+
+ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+  width: 100%;
+  background-color: white;
+}
+
+li {
+  list-style: none;
 }
 
 .links {
   font-size: 2rem;
-  text-align: right;
   color: green;
 }
 .nav-link:active {
   color: white;
 }
 
+img, video {
+  display: block;
+  margin: auto;
+  width: 50%;
+}
 
-#pizza {
-  margin-top: 150px;
+p {
+  text-align: center;
+  font-size: 2rem;
+  color: green;
+  padding: 1rem;
+}
+
+h1 {
+  padding-top: 5rem;
 }
 
 h1, h3 {
   color: darkred;
+  font-size: 2rem;
+  text-align: center;
 }
 
+h3 {
+  padding: 1rem;
+}
 
 header {
-  position: fixed;
   top: 0;
-  min-height: 75px;
-  padding: 0px 20px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+  width: 100%;
 }
 
+#nav-bar {
+  position: fixed;
+  width: 100%;
+}
 
-#wings:except h3 {
-  display: flex;
-  align-items: center;
-  }
 
 h1, h3, form, footer {
   text-align: center;
 }
 
 #header-img {
-  width: 100px;
-  justify-content: center;
-  align-items: center;
-
+  width: 10%;
+  display: block;
+  margin: auto;
 }
 
 #menu {
-  justify-content: center;
-  align-content: center;
-  width: 200px;
-}
-
-@media (max-width: 650px) {
-  nav {
-    margin-top: 10px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 0 50px;
-  }
-  nav li {
-    padding-bottom: 5px;
-  }
-}
-
-nav > ul {
-  width: 35vw;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  padding: 1rem;
 }
